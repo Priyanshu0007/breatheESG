@@ -8,6 +8,7 @@ type ContextProp = {
     children: React.ReactNode
 } 
 
+  
 const firebaseConfig = {
     apiKey: "AIzaSyAgniHgiSfxJzUaK1465OS_GgnyJ5BipvY",
     authDomain: "food-app-b8b01.firebaseapp.com",

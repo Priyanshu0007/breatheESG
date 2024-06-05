@@ -1,38 +1,51 @@
 .s-box{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     height: 100%;
+    gap: 0.75rem;
 }
 .s-title{
-color: #F3F3F3;
-font-size: 24px;
-font-weight: 600;
-line-height: 36px;
-text-align: left;
+    color: #F3F3F3;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: left;
 
 }
 .s-text{
-color: #F3F3F3;
-font-size: 14px;
-font-weight: 400;
-line-height: 21px;
-text-align: left;
+    color: #F3F3F3;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
 
 }
 .s-input{
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
     label{
         color: white;
         font-size: 12px;
         font-weight: 600;
         line-height: 18px;
         text-align: left;
+        &::after{
+            content: " *";
+            color: red;
+
+
+        }
     }
     input{
         padding: 1rem;
         border:1px solid #235E4A;
-
+        border-radius: 5px;
+        font-size: 14px;
+        &::placeholder{
+            color: #9F9F9F;
+        }
         &:focus{
             outline:none;
             border:1px solid #2E9844;
@@ -41,6 +54,57 @@ text-align: left;
     }
     
 }
-.s-social{}
-.s-conatct{}
-.s-continue{}
+.s-social{
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 0.5rem;
+    gap: 0.25rem;
+    cursor: pointer;
+    p{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 11.66px;
+        letter-spacing: 0.03em;
+        text-align: left;
+        color: white;
+        margin: 0;
+        &:first-child{
+            font-size: 30px;
+        }
+    }
+}
+.s-contact{
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+    color: white;
+    a{
+        color: #4FA556;
+        text-decoration: underline;
+        &:hover {
+            color:#4fa556b2; 
+            text-decoration:underline; 
+            cursor:pointer;  
+        }
+    }
+}
+.s-continue{
+    background-color: #2E9844;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22.5px;
+    text-align: center;
+    padding: 0.75rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.disable{
+    cursor: not-allowed !important;
+}
