@@ -1,0 +1,46 @@
+.s-box{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.s-title{
+color: #F3F3F3;
+font-size: 24px;
+font-weight: 600;
+line-height: 36px;
+text-align: left;
+
+}
+.s-text{
+color: #F3F3F3;
+font-size: 14px;
+font-weight: 400;
+line-height: 21px;
+text-align: left;
+
+}
+.s-input{
+    display: flex;
+    flex-direction: column;
+    label{
+        color: white;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 18px;
+        text-align: left;
+    }
+    input{
+        padding: 1rem;
+        border:1px solid #235E4A;
+
+        &:focus{
+            outline:none;
+            border:1px solid #2E9844;
+            box-shadow:0 0 5px #2E9844;
+        }
+    }
+    
+}
+.s-social{}
+.s-conatct{}
+.s-continue{}
