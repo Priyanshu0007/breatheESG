@@ -7,7 +7,9 @@ import { PiTarget } from "react-icons/pi";
 import { useFirebase } from "../../context/firebase";
 import { toast } from "sonner";
 import { useNavigate } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import TopBar1 from "../../components/TopBar/TopBar1";
+import TopBar2 from "../../components/TopBar/TopBar2";
 
 
 
@@ -29,6 +31,7 @@ const Dashboard = () => {
     if(!firebase.user?.email){nagivate('/sign')}
     else{nagivate('/')}
   },[firebase.user, nagivate])
+  const [dataTracker,setDataTracker]=useState(true)
   return (
     <div className="d-main">
       <div className="sidebar">
@@ -41,9 +44,11 @@ const Dashboard = () => {
         </div>
       </div>
       <div className="d-content">
-        
+        <TopBar1/>
+        <TopBar2 dataTracker={dataTracker} setDataTracker={setDataTracker}/>
       </div>
     </div>
+
   )
 }
 

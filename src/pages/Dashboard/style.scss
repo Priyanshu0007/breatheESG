@@ -1,6 +1,7 @@
 .d-main{
     width: 100%;
     height: 100vh;
+    display: flex;
 }
 .sidebar{
     width: 10%;
@@ -45,4 +46,8 @@
 }
 .logout{
     color: red !important;
+}
+.d-content{
+    width: 90%;
+    height: 100vh;
 }
