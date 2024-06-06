@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import React, { Dispatch, SetStateAction, useEffect, useState } from 'react'
+import { Dispatch, SetStateAction, useEffect, useState } from 'react'
 import { FcGoogle } from "react-icons/fc";
 import { FaTwitterSquare } from "react-icons/fa";
 import "./styles.scss"

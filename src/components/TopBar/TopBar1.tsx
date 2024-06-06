@@ -1,4 +1,4 @@
-import React from 'react'
+
 import "./style.scss"
 import { FaRegBell } from "react-icons/fa";
 
