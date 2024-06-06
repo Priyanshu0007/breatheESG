@@ -37,7 +37,7 @@ const Dashboard = () => {
   return (
     <div className="d-main">
       <div className="sidebar">
-        <div><img src="/src/assets/logo.png"/></div>
+        <div><img src="/logo.png"/></div>
         <div>
             {navItems.map((it)=>{
               return(<div className={`nav-items ${it.class}`} key={it.id}><p>{it.icon}</p><p>{it.name}</p></div>)

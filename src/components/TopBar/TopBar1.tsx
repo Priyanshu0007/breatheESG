@@ -19,7 +19,7 @@ const TopBar1 = () => {
   return (
     <div className='top-bar-1'>
       <div className='top-left'>
-        <div><img src='/src/assets/small.png' alt='logo'/></div>
+        <div><img src='/small.png' alt='logo'/></div>
         <div>View Name</div>
         <div className='top-drop'>
           <Dropdown menu={{ items }} trigger={['click']}>
@@ -36,7 +36,7 @@ const TopBar1 = () => {
       <div className='top-right'>
         <div><FaRegBell className='top-icon'/></div>
         <div>John Doe</div>
-        <div><img src='/src/assets/user.png' alt='user'/></div>
+        <div><img src='/user.png' alt='user'/></div>
       </div>
     </div>
   )
