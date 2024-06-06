@@ -2,6 +2,8 @@
     width: 100%;
     height: 100vh;
     display: flex;
+    position: relative;
+
 }
 .sidebar{
     width: 10%;
@@ -20,6 +22,11 @@
             width: 100%;
         }
     }
+    z-index: 1;
+    position: relative;
+}
+.sidebar-off{
+    transform: translateX(-155px);
 }
 .nav-items{
     display: flex;
@@ -41,6 +48,16 @@
 
     }
 }
+.sidebtn{
+    position: absolute;
+    right: -10px;
+    top: 40px;
+    z-index: 5;
+    padding: 5px;
+    border-radius: 100%;
+    background-color: black;
+    color: white;
+}
 .selected{
     color: #4FA556 !important;
 }
@@ -48,6 +65,11 @@
     color: red !important;
 }
 .d-content{
-    width: 90%;
+    width: 88%;
+    right: 0;
     height: 100vh;
+    position: absolute;
+}
+.d-content-off{
+    width: 98%;
 }

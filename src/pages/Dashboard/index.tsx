@@ -12,6 +12,7 @@ import TopBar1 from "../../components/TopBar/TopBar1";
 import TopBar2 from "../../components/TopBar/TopBar2";
 import DataEntry from "../../components/Content/DataEntry";
 import Tracker from "../../components/Content/Tracker";
+import { FaChevronLeft,FaChevronRight } from "react-icons/fa";
 
 
 
@@ -34,9 +35,11 @@ const Dashboard = () => {
     else{nagivate('/')}
   },[firebase.user, nagivate])
   const [dataTracker,setDataTracker]=useState(true)
+  const [sidebar,setSidebar]=useState(true);
   return (
     <div className="d-main">
-      <div className="sidebar">
+      <div className={`sidebar ${sidebar ? "" : "sidebar-off"}`}>
+        <div onClick={()=>setSidebar(!sidebar)} className="sidebtn">{sidebar ? <FaChevronLeft/> : <FaChevronRight/>}</div>
         <div><img src="/logo.png"/></div>
         <div>
             {navItems.map((it)=>{
@@ -45,7 +48,7 @@ const Dashboard = () => {
             <div onClick={()=>{firebase.signOutUser();toast.success('Succesfull Logged Out',{duration:3000})}} className={`nav-items logout`} ><p><MdLogout/></p><p>Logout</p></div>
         </div>
       </div>
-      <div className="d-content">
+      <div className={`d-content ${sidebar ? "" : "d-content-off"}`}>
         <TopBar1/>
         <TopBar2 dataTracker={dataTracker} setDataTracker={setDataTracker}/>
         <div className="table">
