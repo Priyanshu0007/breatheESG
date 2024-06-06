@@ -11,7 +11,7 @@ interface myProps {
  }
  const items: MenuProps['items'] = [
     {
-      label: <div>North India Region</div>,
+      label: <div>FY 2023-24</div>,
       key: '0',
     },
   ];
@@ -34,7 +34,7 @@ const TopBar2 = ({dataTracker,setDataTracker}:myProps) => {
                 <Dropdown menu={{ items }} trigger={['click']}>
                 <a onClick={(e) => e.preventDefault()}>
                 <Space>
-                    North India Region
+                FY 2023-24
                     <FaAngleDown className=''/>
                 </Space>
                 </a>

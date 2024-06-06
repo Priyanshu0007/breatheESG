@@ -10,6 +10,8 @@ import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import TopBar1 from "../../components/TopBar/TopBar1";
 import TopBar2 from "../../components/TopBar/TopBar2";
+import DataEntry from "../../components/Content/DataEntry";
+import Tracker from "../../components/Content/Tracker";
 
 
 
@@ -46,6 +48,9 @@ const Dashboard = () => {
       <div className="d-content">
         <TopBar1/>
         <TopBar2 dataTracker={dataTracker} setDataTracker={setDataTracker}/>
+        <div className="table">
+          {dataTracker ? <DataEntry/> : <Tracker/>}
+        </div>
       </div>
     </div>
 

@@ -3,12 +3,12 @@
     padding: 1rem 2rem;
     justify-content: space-between;
     border-bottom: 0.1px #9F9F9F solid;
-    background-color: #F3F3F3;
+    background-color: rgb(249 250 251);
 }
 .top-left{
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
     img{
         width: 30px;
     }
@@ -72,6 +72,10 @@
 
 }
 .submit-wrapper{
-    padding-left: 2rem;
+    padding-left: 1rem;
     border-left: 0.1px darkgray solid;
+}
+.table{
+    margin: 0.5rem;
+    border: 0.5px lightgrey;
 }

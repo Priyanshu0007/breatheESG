@@ -1,0 +1,9 @@
+.assignment{
+    color: #4FA556;
+}
+.grayed{
+    color: #9F9F9F;
+    &:hover{
+        color: #4FA556;;
+    }
+}
