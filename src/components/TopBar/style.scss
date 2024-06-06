@@ -24,6 +24,7 @@
     padding: 0.5rem; 
     border: 1px #9F9F9F solid;
     border-radius: 5px;
+    cursor: pointer;
     
 
 }
@@ -51,6 +52,7 @@
     line-height: 19.5px;
     letter-spacing: 0.02em;
     text-align: left;
+    cursor: pointer;
     div{&:first-child{font-size: 20px;}}
     color: #9F9F9F;
 }
@@ -69,6 +71,7 @@
     font-weight: 700;
     line-height: 22.5px;
     text-align: left;
+    cursor: pointer;
 
 }
 .submit-wrapper{

@@ -7,3 +7,68 @@
         color: #4FA556;;
     }
 }
+.main-content{
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.content-logos{
+    display: flex;
+    gap: 1rem;
+
+}
+.boxxer{
+    display: flex;
+    padding: 1rem;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    align-items: start;
+    gap: 2rem;
+    width: 15%;
+
+}
+.auto-save{
+    width: 100%;
+    text-align: right;
+    color: #9F9F9F;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    margin: 0;
+
+}
+.boxxer-text{
+    p{
+        color: gray;
+        font-size: 10px;
+        font-weight: 600;
+        line-height: 15px;
+        text-align: left;
+
+    }
+    span{
+        color: black;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 42px;
+        text-align: left;
+
+    }
+    width: 75%;
+}
+.inputer{
+    width: 30%;
+}
+.boxxer-icon{
+    width: 25%;
+    font-size: 2rem;
+    color: gray;
+    
+    padding: 10px;
+    border-radius: 0.5rem;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

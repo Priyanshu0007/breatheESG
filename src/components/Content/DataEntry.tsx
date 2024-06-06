@@ -47,7 +47,7 @@ interface DataType {
         key: 'tags',
         dataIndex: 'tags',
         render: (tags: string) => {
-            if(tags==="PENDING"){return(<Tag bordered={false} color='volcano'>PENDING</Tag>)}
+            if(tags==="PENDING"){return(<Tag bordered={false} color='error'>PENDING</Tag>)}
             else{return(<Tag bordered={false} color='green'>COMPLETE</Tag>)}
         }
 
